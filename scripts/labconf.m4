@@ -1,4 +1,3 @@
-dnl
 divert(`-1')
 
 ## NETWORK ##
@@ -28,5 +27,17 @@ ifelse($1,100,`dnl
 ')dnl
 
 define(`net_def_end',`</network>')dnl
+
+
+## VM NETWORK ##
+
+#   vm_route_int(int,ip)
+#
+define(`vm_router_int',`dnl
+auto $1
+iface $1 inet static
+    address $2 dnl
+')dnl
+
 
 divert
