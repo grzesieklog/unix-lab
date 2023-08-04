@@ -42,16 +42,13 @@ INT_ADDRESS=(# enp1s0         enp2s0          enp3s0          enp4s0           e
 )
 
 
-#for i in `seq 0 $(( ${#ROUTER_LIST[@]} - 1 ))`; do
-#  echo "router ${ROUTER_LIST[$i]} int number ${ROUTER_INT_NUMBER[$i]} "
-#done
 
 for i in `seq 0 $(( ${#ROUTER_LIST[@]} - 1 ))`; do
   IP=${INT_ADDRESS[$i]}
   ADDR=($(echo $IP | tr '[:space:]' '\n'))
   for j in `seq ${ROUTER_INT_NUMBER[$i]}`; do
     g=j-1
-    m4 labconf.m4 <(echo "vm_router_int(enp${j}s0,${ADDR[$g]})") >> ../vm/interfaces.${ROUTER_LIST[$i]}.lab
+    echo "vm_router_int(enp${j}s0,${ADDR[$g]})" | m4 labconf.m4 - >> ../vm/interfaces.${ROUTER_LIST[$i]}.lab
   done
 done
 
