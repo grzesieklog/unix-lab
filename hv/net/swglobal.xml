@@ -1,170 +1,206 @@
 <network>
   <name>swglobal</name>
-  <forward mode='bridge'/>
-  <bridge name='swglobal'/>
-  <virtualport type='openvswitch'/>
-  
-  <portgroup name='vlan100' default='yes'>
+  <forward mode="bridge"/>
+  <bridge name="swglobal"/>
+  <virtualport type="openvswitch"/>
+  <portgroup name="vlan100" default="yes">
     <vlan>
-      <tag id='100'/>
+      <tag id="100"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan101'>
+  <portgroup name="vlan101">
     <vlan>
-      <tag id='101'/>
+      <tag id="101"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan102'>
+  <portgroup name="vlan102">
     <vlan>
-      <tag id='102'/>
+      <tag id="102"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan103'>
+  <portgroup name="vlan103">
     <vlan>
-      <tag id='103'/>
+      <tag id="103"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan104'>
+  <portgroup name="vlan104">
     <vlan>
-      <tag id='104'/>
+      <tag id="104"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan105'>
+  <portgroup name="vlan105">
     <vlan>
-      <tag id='105'/>
+      <tag id="105"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan106'>
+  <portgroup name="vlan106">
     <vlan>
-      <tag id='106'/>
+      <tag id="106"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan107'>
+  <portgroup name="vlan107">
     <vlan>
-      <tag id='107'/>
+      <tag id="107"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan108'>
+  <portgroup name="vlan108">
     <vlan>
-      <tag id='108'/>
+      <tag id="108"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan109'>
+  <portgroup name="vlan109">
     <vlan>
-      <tag id='109'/>
+      <tag id="109"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan110'>
+  <portgroup name="vlan110">
     <vlan>
-      <tag id='110'/>
+      <tag id="110"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan111'>
+  <portgroup name="vlan111">
     <vlan>
-      <tag id='111'/>
+      <tag id="111"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan112'>
+  <portgroup name="vlan112">
     <vlan>
-      <tag id='112'/>
+      <tag id="112"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan113'>
+  <portgroup name="vlan113">
     <vlan>
-      <tag id='113'/>
+      <tag id="113"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan114'>
+  <portgroup name="vlan201">
     <vlan>
-      <tag id='114'/>
+      <tag id="201"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan115'>
+  <portgroup name="vlan301">
     <vlan>
-      <tag id='115'/>
+      <tag id="301"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan116'>
+  <portgroup name="vlan302">
     <vlan>
-      <tag id='116'/>
+      <tag id="302"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan117'>
+  <portgroup name="vlan303">
     <vlan>
-      <tag id='117'/>
+      <tag id="303"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan118'>
+  <portgroup name="vlan401">
     <vlan>
-      <tag id='118'/>
+      <tag id="401"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan119'>
+  <portgroup name="vlan402">
     <vlan>
-      <tag id='119'/>
+      <tag id="402"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan120'>
+  <portgroup name="vlan403">
     <vlan>
-      <tag id='120'/>
+      <tag id="403"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan121'>
+  <portgroup name="vlan404">
     <vlan>
-      <tag id='121'/>
+      <tag id="404"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan122'>
+  <portgroup name="vlan501">
     <vlan>
-      <tag id='122'/>
+      <tag id="501"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan123'>
+  <portgroup name="vlan502">
     <vlan>
-      <tag id='123'/>
+      <tag id="502"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan124'>
+  <portgroup name="vlan503">
     <vlan>
-      <tag id='124'/>
+      <tag id="503"/>
     </vlan>
   </portgroup>
-  <portgroup name='vlan125'>
+  <portgroup name="vlan504">
     <vlan>
-      <tag id='125'/>
+      <tag id="504"/>
     </vlan>
   </portgroup>
-  
-  <portgroup name='trunk-all'>
-    <vlan trunk='yes'>
-      <tag id='1' nativeMode='untagged'/>
-      <tag id='100'/>
-      <tag id='101'/>
-      <tag id='102'/>
-      <tag id='103'/>
-      <tag id='104'/>
-      <tag id='105'/>
-      <tag id='106'/>
-      <tag id='107'/>
-      <tag id='108'/>
-      <tag id='109'/>
-      <tag id='110'/>
-      <tag id='111'/>
-      <tag id='112'/>
-      <tag id='113'/>
-      <tag id='114'/>
-      <tag id='115'/>
-      <tag id='116'/>
-      <tag id='117'/>
-      <tag id='118'/>
-      <tag id='119'/>
-      <tag id='120'/>
-      <tag id='121'/>
-      <tag id='122'/>
-      <tag id='123'/>
-      <tag id='124'/>
-      <tag id='125'/>
+  <portgroup name="vlan601">
+    <vlan>
+      <tag id="601"/>
     </vlan>
   </portgroup>
-  
+  <portgroup name="vlan602">
+    <vlan>
+      <tag id="602"/>
+    </vlan>
+  </portgroup>
+  <portgroup name="vlan603">
+    <vlan>
+      <tag id="603"/>
+    </vlan>
+  </portgroup>
+  <portgroup name="vlan604">
+    <vlan>
+      <tag id="604"/>
+    </vlan>
+  </portgroup>
+  <portgroup name="vlan605">
+    <vlan>
+      <tag id="605"/>
+    </vlan>
+  </portgroup>
+  <portgroup name="vlan606">
+    <vlan>
+      <tag id="606"/>
+    </vlan>
+  </portgroup>
+  <portgroup name="vlan701">
+    <vlan>
+      <tag id="701"/>
+    </vlan>
+  </portgroup>
+  <portgroup name="vlan702">
+    <vlan>
+      <tag id="702"/>
+    </vlan>
+  </portgroup>
+  <portgroup name="vlan703">
+    <vlan>
+      <tag id="703"/>
+    </vlan>
+  </portgroup>
+  <portgroup name="vlan704">
+    <vlan>
+      <tag id="704"/>
+    </vlan>
+  </portgroup>
+  <portgroup name="vlan705">
+    <vlan>
+      <tag id="705"/>
+    </vlan>
+  </portgroup>
+  <portgroup name="vlan706">
+    <vlan>
+      <tag id="706"/>
+    </vlan>
+  </portgroup>
+  <portgroup name="vlan1101">
+    <vlan>
+      <tag id="1101"/>
+    </vlan>
+  </portgroup>
+  <portgroup name="vlan1201">
+    <vlan>
+      <tag id="1201"/>
+    </vlan>
+  </portgroup>
 </network>
