@@ -15,7 +15,9 @@ help:
 	@echo interfaces
 
 swglobalxml:
+	rm -f ../hv/net/swglobal.xml
 	./gen-libvirt-networks.sh
 
-interfaces: 
+interfaces:
+	rm -f ../vm/interfaces.*.lab	
 	./gen-routers-networks.sh
