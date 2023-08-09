@@ -1,0 +1,24 @@
+auto enp1s0
+iface enp1s0 inet static
+    address 10.0.0.2/24 
+
+auto enp2s0
+iface enp2s0 inet static
+    address 192.0.2.2/30 
+
+auto enp3s0
+iface enp3s0 inet static
+    address 192.0.2.9/30 
+
+auto enp4s0
+iface enp4s0 inet static
+    address 192.0.2.13/30 
+
+auto enp5s0
+iface enp5s0 inet static
+    address 192.0.2.17/30 
+
+auto enp6s0
+iface enp6s0 inet static
+    address 192.0.2.129/29 
+
