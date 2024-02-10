@@ -1,0 +1,11 @@
+auto gateway100
+iface gateway100 inet static
+    address 10.0.0.1/24
+    
+auto gateway101
+iface gateway101 inet static
+    address 192.0.2.1/30
+    
+auto gateway102
+iface gateway102 inet static
+    address 192.0.2.5/30
